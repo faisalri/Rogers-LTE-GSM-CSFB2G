@@ -46,7 +46,7 @@ To run this application on your local machine, follow these steps:
 
 Feel free to reach out if you have questions or feedback.
 
-* **Your Name / Company Name**
+* **Faisal Riyadi**
 * [LinkedIn Profile](https://www.linkedin.com/in/faisalriyadi/)
 * [GitHub Profile](https://github.com/faisalri)
 
