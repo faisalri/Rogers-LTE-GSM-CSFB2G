@@ -131,9 +131,24 @@ if st.button("Generate Script"):
     else:
         st.error("Script generation failed. Please check the template file structure and your input parameters.")
 
+# --- Footer Section ---
+st.markdown("---") # Garis pemisah
+st.markdown(
+    """
+    **Developed by:** Faisal Riyadi  
+    **Contact:** faisal.riyadi@yupanatech.com
+    """
+)
+st.markdown(
+    """
+    > "Consistency is key; keep learning, keep growing until you master it!"
+    """
+)
+
+# Optional: Keep the developer note for deployment if needed, or remove for public apps.
 st.markdown(
     """
     ---
-    *Ensure the `template-csfb2G.txt` file is in the same directory as this `app.py` script.*
+    *Developer Note: Ensure the `template-csfb2G.txt` file is in the same directory as this `app.py` script.*
     """
 )
