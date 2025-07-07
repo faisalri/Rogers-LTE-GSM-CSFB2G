@@ -1,0 +1,257 @@
+lt all
+$date = `date +%y%m%d-%H%M`
+l+ $nodename_csfb2G_$date.log
+s+
+
+gs+
+confb+
+
+//GeraNetwork
+pr ENodeBFunction=1,GeraNetwork=1
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1
+userLabel 
+end
+
+//GeranFrequency
+pr ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+frequencyGroupId 1
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=129
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=129
+arfcnValueGeranDl 129
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=130
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=130
+arfcnValueGeranDl 130
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=131
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=131
+arfcnValueGeranDl 131
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=132
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=132
+arfcnValueGeranDl 132
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=157
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=157
+arfcnValueGeranDl 157
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency158
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=158
+arfcnValueGeranDl 158
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency181
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=181
+arfcnValueGeranDl 181
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency233
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=233
+arfcnValueGeranDl 233
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=234
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=234
+arfcnValueGeranDl 234
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=235
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=235
+arfcnValueGeranDl 235
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=236
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=236
+arfcnValueGeranDl 236
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=237
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=237
+arfcnValueGeranDl 237
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=238
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=238
+arfcnValueGeranDl 238
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+pr ENodeBFunction=1,GeraNetwork=1,GeranFrequency=239
+if $nr_of_mos = 0
+crn ENodeBFunction=1,GeraNetwork=1,GeranFrequency=239
+arfcnValueGeranDl 239
+bandIndicator 0
+geranFreqGroupRef ENodeBFunction=1,GeraNetwork=1,GeranFreqGroup=GSM850
+userLabel 
+end
+
+
+//GeranFreqGroupRelation
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOX4,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOX5,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOX6,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXA,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXB,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXC,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXD,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXE,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXF,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXX,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXY,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXZ,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+crn ENodeBFunction=1,EUtranCellFDD=MNCOXG,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+crn ENodeBFunction=1,EUtranCellFDD=MNCOXH,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+cr ENodeBFunction=1,EUtranCellFDD=MNCOXJ,GeranFreqGroupRelation=GSM850
+GeraNetwork=1,GeranFreqGroup=GSM850
+0
+
+//PARAMTER csfb2G
+set GeranFrequency bandIndicator 0
+set GeranFreqGroup frequencyGroupId 1
+get GeranFreqGroup geranFreqGroupId
+set GeranFreqGroupRelation cellReselectionPriority 0
+set GeranFreqGroupRelation threshXLow 62
+set GeranFreqGroupRelation connectedModeMobilityPrio -1
+set GeranFreqGroupRelation csFallbackPrio 2
+set GeranFreqGroupRelation csFallbackPrioEC 2
+set GeranFreqGroupRelation altCsfbTargetPrio -1
+set GeranFreqGroupRelation altCsfbTargetPrioEc -1
+set GeranFreqGroupRelation voicePrio -1
+set GeranFreqGroupRelation geranFreqGroupRef GeraNetwork=1,GeranFreqGroup=GSM850
+set AnrFunctionGeran anrStateGsm 0
+set FeatureState=CXC4010618 featurestate 1
+set FeatureState=CXC4010956 featurestate 1
+set FeatureState=CXC4011664 featurestate 0
+
+gs-
+confb-
+
+lt all
+s+
+pr GeraNetwork
+pr GeranFreqGroup
+pr GeranFrequency
+get GeranFrequency bandIndicator
+get GeranFreqGroup frequencyGroupId
+get GeranFreqGroup geranFreqGroupId
+get GeranFreqGroupRelation cellReselectionPriority
+get GeranFreqGroupRelation threshXLow
+get GeranFreqGroupRelation connectedModeMobilityPrio
+get GeranFreqGroupRelation csFallbackPrio
+get GeranFreqGroupRelation csFallbackPrioEC
+get GeranFreqGroupRelation altCsfbTargetPrio
+get GeranFreqGroupRelation altCsfbTargetPrioEc
+get GeranFreqGroupRelation voicePrio
+get GeranFreqGroupRelation geranFreqGroupRef
+get GeranFreqGroupRelation geranFreqGroupRef
+get AnrFunctionGeran anrStateGsm
+get FeatureState=CXC4010618 featurestate
+get FeatureState=CXC4010956 featurestate
+get FeatureState=CXC4011664 featurestate
+
+l-
