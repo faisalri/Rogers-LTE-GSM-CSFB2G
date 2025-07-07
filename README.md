@@ -47,7 +47,7 @@ To run this application on your local machine, follow these steps:
 Feel free to reach out if you have questions or feedback.
 
 * **Your Name / Company Name**
-* [LinkedIn Profile](https://www.linkedin.com/in/faisalriyadi/) (Replace with your actual LinkedIn URL)
-* [GitHub Profile](https://github.com/faisalri) (Replace with your actual GitHub URL)
+* [LinkedIn Profile](https://www.linkedin.com/in/faisalriyadi/)
+* [GitHub Profile](https://github.com/faisalri)
 
 Thank you for visiting the Rogers LTE-GSM CSFB2G Script Generator! 😊
